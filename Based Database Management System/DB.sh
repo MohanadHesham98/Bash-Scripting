@@ -1,4 +1,5 @@
 DB() {
+    echo "Main Menu:" 
     PS3="Enter your choice: "
     select choice in "create DB" "list DB" "drop DB" "connect DB" "exit"
     do
