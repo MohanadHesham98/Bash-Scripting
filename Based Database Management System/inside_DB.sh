@@ -5,9 +5,9 @@ source "$SCRIPT_DIR/selected.sh"
 source "$SCRIPT_DIR/delete_table.sh"
 source "$SCRIPT_DIR/update_table.sh"
 source "$SCRIPT_DIR/print_table.sh"
+PS3="Enter your choice: "
 inside_DB() {
 	
-    echo "Main Menu:" 
     select choice in "create table" "list tables"  "print table" "drop table" "insert table" "select from table" "delete from table" "update table" "exit"
     do
         case $choice in
